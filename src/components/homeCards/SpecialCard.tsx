@@ -1,11 +1,11 @@
 import React from 'react'
 import { SkiperCard } from '../ui/skiper-card'
 import BadgeButton from '../ui/badge-button'
-import card4 from '@/public/images/card4.webp'
-import card5 from '@/public/images/card5.webp'
-import card6 from '@/public/images/card6.webp'
-import card7 from '@/public/images/card7.webp'
-import card8 from '@/public/images/card8.webp'
+import card4 from '/public/images/card4.webp'
+import card5 from '/public/images/card5.webp'
+import card6 from '/public/images/card6.webp'
+import card7 from '/public/images/card7.webp'
+import card8 from '/public/images/card8.webp'
 import { cn } from '@/lib/utils'
 
 const SpecialCard = () => {
@@ -57,7 +57,7 @@ const SpecialCard = () => {
             step2light2: card5,
             step3dark: card4,
             step3light: card4,
-            step4light: card4,
+            step4light: card8,
             alt: "Something",
           }}
 
