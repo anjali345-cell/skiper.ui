@@ -7,23 +7,23 @@ import TemplateCard from '@/components/homeCards/TemplateCard'
 import ThemeChange from '@/components/homeCards/ThemeChange'
 import HeroContent from '@/components/navbar/landingPage/HeroContent'
 import Navbar from '@/components/navbar/Navbar'
-import Section from '@/components/section/Section1'
-import Section1 from '@/components/section/Section2'
+import Section2 from '@/components/section/Section2'
+import Section1 from '@/components/section/Section1'
 
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-       <Navbar />
+      <Navbar />
        <HeroContent />
        <CardCarouselParent />
        <TemplateCard />
-       <Section />
+       <Section1 />
        <SpecialCard />
        <AiInputCard />
        <ThemeChange />
-       <Section1 />
+       <Section2 />
        <EndCard />
     </div>
   )

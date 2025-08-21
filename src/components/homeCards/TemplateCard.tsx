@@ -26,17 +26,17 @@ const TemplateCard = () => {
   ]
   return (
 
-    <div>
-      <div className='w-[69%] p-2 my-20 bg-white dark:bg-gray-800 mx-auto rounded-3xl mx-auto'>
-        <div className='h-full p-6 bg-[#f4f4f4] dark:bg-gray-700 shadow rounded-3xl mx-auto'>
+    <div className="mb-10 max-w-4xl rounded-[40px] border border-black/5 dark:border-white/20 p-2 my-10 shadow-sm mx-auto">
+      <div className="bg-white dark:bg-gray-800 max-w-6xl shadow-sm rounded-3xl mx-auto">
+        <div className="p-6 sm:p-8 bg-[#f4f4f4] dark:bg-gray-800 shadow rounded-3xl">
           <BadgeButton>Templates</BadgeButton>
-          <div className='flex justify-between items-center'>
+          <div className="mt-6 grid gap-6 sm:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
 
             {cards.map((card, index) => (
-              <MinimalCard className='m-2 w-[460px]' key={index}>
+              <MinimalCard className='m-2 w-full' key={index}>
                 {card.image && (
                   <MinimalCardImage
-                    className="h-[120px]"
+                    className="h-[150px] sm:h-[180px] object-cover rounded-t-2xl"
                     src={card.image}
                     alt={card.title}
                   />
