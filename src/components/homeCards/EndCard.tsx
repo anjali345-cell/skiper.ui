@@ -53,7 +53,7 @@ const EndCard = () => {
       <footer className="mt-10">
         <div className="flex px-6 py-3">
           <span className='text-sm'>
-            Built by Anjali. If it breaks… you touched it wrong👀 Bugs? Nope, those are features 🐞✨ <a href="https://github.com/anjali345-cell/skiper.ui" className='hover:underline'>GitHub</a>.
+           Built by Anjali. If it breaks… you touched it wrong👀 Bugs? Nope, those are features 🐞✨ <a href="https://github.com/anjali345-cell/skiper.ui" className='hover:underline'>GitHub</a>.
           </span>
         </div>
       </footer>
