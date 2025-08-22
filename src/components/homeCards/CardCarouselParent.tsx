@@ -11,7 +11,7 @@ const images = [
 
   return (
     <div>
-     <CardCarousel images={images} showPagination={false}/>
+     <CardCarousel images={images} showPagination={true}/>
     </div>
   )
 }
