@@ -11,11 +11,11 @@ import { cn } from '@/lib/utils'
 
 const SpecialCard = () => {
   return (
-    <div className='my-20 px-4'>
-      <div className='max-w-4xl mx-auto'>
+    <div className='my-20 px-4 max-w-4xl rounded-[2%] border-neutral/800/5 shadow-3xl mx-auto'>
+      <div className='max-w-4xl rounded-[2%] m-4 mx-auto'>
         <BadgeButton>Component Preview</BadgeButton>
-        <h2 className='text-gray-400 font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center mt-8'>Tailwind + Framer + React</h2>
-        <h5 className='text-gray-400 font-medium text-lg sm:text-xl md:text-2xl opacity-70 text-center mb-8'>Everything you need to ship</h5>
+        <h2 className='font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center mt-8'>Tailwind + Framer + React</h2>
+        <h5 className='font-medium text-lg sm:text-xl md:text-2xl opacity-70 text-center mb-8'>Everything you need to ship</h5>
         <SkiperCard
           title='Component that pop'
           description='Make your app 🤌'

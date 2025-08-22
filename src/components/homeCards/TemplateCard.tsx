@@ -26,11 +26,14 @@ const TemplateCard = () => {
   ]
   return (
 
-    <div className="mb-10 max-w-4xl rounded-[40px] border border-black/5 dark:border-white/20 p-2 my-10 shadow-sm mx-auto">
-      <div className="bg-white dark:bg-gray-800 max-w-6xl shadow-sm rounded-3xl mx-auto">
-        <div className="p-6 sm:p-8 bg-[#f4f4f4] dark:bg-gray-800 shadow rounded-3xl">
-          <BadgeButton>Templates</BadgeButton>
-          <div className="mt-6 grid gap-6 sm:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="mb-10 max-w-4xl rounded-[3%] border-neutral/5 p-2 my-10 shadow-lg shadow-sm mx-auto">
+      <div className="border-neutral-500 bg-neutral-800/5 max-w-6xl shadow-sm rounded-[3%] mx-auto">
+        <div className="p-6 sm:p-8 border-neutral/5 text-base shadow rounded-[3%]">
+          <BadgeButton
+          >
+            Templates
+          </BadgeButton>
+          <div className="mt-6 cover-fit border-neutral-500 bg-neutral-800/5 rounded-[3%] grid gap-6 sm:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
 
             {cards.map((card, index) => (
               <MinimalCard className='m-2 w-full' key={index}>

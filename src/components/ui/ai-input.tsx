@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from "react"
 import Image from "next/image"
 import { AnimatePresence, motion } from "framer-motion"
-import { Globe, Paperclip, Plus, Send } from "lucide-react"
+import { Badge, Globe, Paperclip, Plus, Send, SparklesIcon } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { Textarea } from "@/components/ui/textarea"
@@ -67,7 +67,7 @@ const AnimatedPlaceholder = ({ showSearch }: { showSearch: boolean }) => (
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -5 }}
       transition={{ duration: 0.1 }}
-      className="pointer-events-none w-[150px] text-sm absolute text-black/70 dark:text-white/70"
+      className="pointer-events-none w-[150px] text-sm absolute"
     >
       {showSearch ? "Search the web..." : "Ask Skiper Ai..."}
     </motion.p>
@@ -113,9 +113,10 @@ export default function AiInput() {
     }
   }, [imagePreview])
   return (
-    <div className="w-full py-4">
-      <div className="relative max-w-xl border rounded-[22px] border-black/5 p-1 w-full mx-auto">
+    <div className="w-full py-4 box-shadow-5px">
+      <div className="relative max-w-xl bg-neutral-800/20 border rounded-[22px] border-black/5 p-1 w-full mx-auto">
         <div className="relative rounded-2xl border border-black/5 bg-neutral-800/5 flex flex-col">
+        
           <div
             className="overflow-y-auto"
             style={{ maxHeight: `${MAX_HEIGHT}px` }}
@@ -125,7 +126,7 @@ export default function AiInput() {
                 id="ai-input-04"
                 value={value}
                 placeholder=""
-                className="w-full rounded-2xl rounded-b-none px-4 py-3 bg-black/5 dark:bg-white/5 border-none dark:text-white resize-none focus-visible:ring-0 leading-[1.2]"
+                className="w-full rounded-2xl rounded-b-none px-4 py-3 bg-neutral/500/8 border-none resize-none focus-visible:ring-0 leading-[1.2]"
                 ref={textareaRef}
                 onKeyDown={(e) => {
                   if (e.key === "Enter" && !e.shiftKey) {
@@ -139,21 +140,21 @@ export default function AiInput() {
                 }}
               />
               {!value && (
-                <div className="absolute left-4 top-3">
+                <div className="absolute bg-[#2F2F2F] left-4 top-3">
                   <AnimatedPlaceholder showSearch={showSearch} />
                 </div>
               )}
             </div>
           </div>
 
-          <div className="h-12 bg-black/5 dark:bg-white/5 rounded-b-xl">
+          <div className="h-12 bg-neutral/5 rounded-b-xl">
             <div className="absolute left-3 bottom-3 flex items-center gap-2">
               <label
                 className={cn(
-                  "cursor-pointer relative rounded-full p-2 bg-black/5 dark:bg-white/5",
+                  "cursor-pointer relative rounded-full p-2 bg-black/5",
                   imagePreview
                     ? "bg-[#ff3f17]/15 border border-[#ff3f17] text-[#ff3f17]"
-                    : "bg-black/5 dark:bg-white/5 text-black/40 dark:text-white/40 hover:text-black dark:hover:text-white"
+                    : "bg-neutral/5 text-black/40 hover:text-black"
                 )}
               >
                 <input
@@ -164,7 +165,7 @@ export default function AiInput() {
                 />
                 <Paperclip
                   className={cn(
-                    "w-4 h-4 text-black/40 dark:text-white/40 hover:text-black dark:hover:text-white transition-colors",
+                    "w-6 h-6 text-neutral-400 ",
                     imagePreview && "text-[#ff3f17]"
                   )}
                 />
@@ -195,7 +196,7 @@ export default function AiInput() {
                   "rounded-full transition-all flex items-center gap-2 px-1.5 py-1 border h-8",
                   showSearch
                     ? "bg-[#ff3f17]/15 border-[#ff3f17] text-[#ff3f17]"
-                    : "bg-black/5 dark:bg-white/5 border-transparent text-black/40 dark:text-white/40 hover:text-black dark:hover:text-white"
+                    : "bg-neutral/600/5 border-transparent text-neutral/400 hover:text-black"
                 )}
               >
                 <div className="w-4 h-4 flex items-center justify-center flex-shrink-0">
@@ -253,7 +254,7 @@ export default function AiInput() {
                   "rounded-full p-2 transition-colors",
                   value
                     ? "bg-[#ff3f17]/15 text-[#ff3f17]"
-                    : "bg-black/5 dark:bg-white/5 text-black/40 dark:text-white/40 hover:text-black dark:hover:text-white"
+                    : "bg-neutral/600/5 hover:text-neutral/800"
                 )}
               >
                 <Send className="w-4 h-4" />

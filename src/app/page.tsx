@@ -1,4 +1,6 @@
 "use client"
+
+import React from 'react'
 import AiInputCard from '@/components/homeCards/AiInputCard'
 import CardCarouselParent from '@/components/homeCards/CardCarouselParent'
 import EndCard from '@/components/homeCards/EndCard'
@@ -10,7 +12,6 @@ import Navbar from '@/components/navbar/Navbar'
 import Section2 from '@/components/section/Section2'
 import Section1 from '@/components/section/Section1'
 
-import React from 'react'
 
 const page = () => {
   return (

@@ -50,7 +50,7 @@ function FeatureCard({
 
   return (
     <motion.div
-      className="animated-cards relative w-full rounded-[16px]    "
+      className="animated-cards rounded-[2%] border-neutral-500 bg-neutral-800/5 relative w-full"
       onMouseMove={handleMouseMove}
       style={
         {
@@ -61,7 +61,7 @@ function FeatureCard({
     >
       <div
         className={cn(
-          "group relative w-full overflow-hidden rounded-3xl border border-black/10  bg-gradient-to-b from-neutral-900/90 to-stone-800 transition duration-300 dark:from-neutral-950/90 dark:to-neutral-800/90",
+          "group relative w-full overflow-hidden rounded-3xl border-neutral-500 bg-gradient-to-b from-neutral-900/90 to-stone-800 transition duration-300 shadow-sm bg-neutral-950",
           "md:hover:border-transparent",
           bgClass
         )}
