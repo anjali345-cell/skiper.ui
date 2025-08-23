@@ -11,9 +11,9 @@ const BadgeButton = ({ children }: BadgeButtonProps) => {
   return (
     <Badge
       variant="outline"
-      className="mb-3 cursor-pointer rounded-[14px] border border-black/10 md:left-6"
+      className="mb-3 px-5 py-0 text-lg shadow-lg cursor-pointer rounded-[20px] border border-neutral-800/10 md:left-6"
     >
-      <IceCreamCone className="fill-[#EEBDE0] stroke-1 text-neutral-800" />
+      <IceCreamCone className="fill-[#d2f583] flex stroke-1 text-neutral-800" />
       {children}
     </Badge>
   )

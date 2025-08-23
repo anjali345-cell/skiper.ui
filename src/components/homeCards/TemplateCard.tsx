@@ -33,7 +33,7 @@ const TemplateCard = () => {
           >
             Templates
           </BadgeButton>
-          <div className="mt-6 cover-fit border-neutral-500 bg-neutral-800/5 rounded-[3%] grid gap-6 sm:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-6 cover-fit rounded-xl grid gap-6 sm:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
 
             {cards.map((card, index) => (
               <MinimalCard className='m-2 w-full' key={index}>

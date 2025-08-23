@@ -11,7 +11,7 @@ import { cn } from '@/lib/utils'
 
 const SpecialCard = () => {
   return (
-    <div className='my-20 px-4 max-w-4xl rounded-[2%] border-neutral/800/5 shadow-3xl mx-auto'>
+    <div className='my-18 px-4 max-w-4xl rounded-4xl border border-gray-200 shadow-3xl mx-auto'>
       <div className='max-w-4xl rounded-[2%] m-4 mx-auto'>
         <BadgeButton>Component Preview</BadgeButton>
         <h2 className='font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center mt-8'>Tailwind + Framer + React</h2>
@@ -64,7 +64,11 @@ const SpecialCard = () => {
 
         />
       </div>
-    </div>
+
+      
+      </div>
+   
+    
   )
 }
 

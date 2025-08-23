@@ -113,10 +113,10 @@ export default function AiInput() {
     }
   }, [imagePreview])
   return (
-    <div className="w-full py-4 box-shadow-5px">
-      <div className="relative max-w-xl bg-neutral-800/20 border rounded-[22px] border-black/5 p-1 w-full mx-auto">
-        <div className="relative rounded-2xl border border-black/5 bg-neutral-800/5 flex flex-col">
-        
+    <div className="w-full py-6 box-shadow-5px">
+      <div className="relative max-w-xl bg-neutral-800/3 border rounded-xl shadow-sm border-white/5 p-1 w-full mx-auto">
+        <div className="relative rounded-xl border border-white/2 bg-neutral-800/5 flex flex-col">
+
           <div
             className="overflow-y-auto"
             style={{ maxHeight: `${MAX_HEIGHT}px` }}
@@ -163,9 +163,9 @@ export default function AiInput() {
                   onChange={handleChange}
                   className="hidden"
                 />
-                <Paperclip
+                <Paperclip 
                   className={cn(
-                    "w-6 h-6 text-neutral-400 ",
+                    "w-6 h-6 ",
                     imagePreview && "text-[#ff3f17]"
                   )}
                 />

@@ -4,12 +4,12 @@ import AnimatedNumberCountdown from '../ui/animated-number-countdown'
 const EndCard = () => {
   return (
     <div>
-      <div className="mb-10 max-w-4xl rounded-[40px] border border-black/5 dark:border-white/20 p-2 shadow-sm mx-auto">
-        <div className=" relative mx-auto  h-[400px] max-w-4xl overflow-hidden rounded-[38px] border border-black/5 bg-[#ff4017] p-2 shadow-sm ">
+      <div className="mb-10 max-w-4xl rounded-[45px] border border-white/50 p-2 shadow-lg mx-auto">
+        <div className=" relative mx-auto  h-[400px] max-w-4xl overflow-hidden rounded-[38px] border border-black/10 bg-[#ff4017] p-2 shadow-sm ">
           <p className="mt-20 text-center text-white">Bringing simplicity to the future</p>
 
-          <div className="flex justify-center w-full leading-none">
-            <a href="#" className="items-center mx-auto mt-10 rounded-full border border-white/20 text-sm p-1 font-medium">
+          <div className="flex justify-center w-full text-lg sm:text-xl md:text-2xl lg:text-3xl leading-snug sm:leading-tight md:leading-normal">
+            <a href="#" className="items-center mx-auto mt-10 rounded-full border border-white/40 text-sm p-1 font-medium">
               <span
                 style={{ 'maxWidth': '600px' }}
                 className="mx-auto max-w-md dark:text-neutral-400/70 animate-shiny-text bg-clip-text bg-no-repeat [background-position:0_0] [background-size:var(--shiny-width)_100%] [transition:background-position_1s_cubic-bezier(.6,.6,0,1)_infinite] bg-gradient-to-r from-transparent via-black/80 via-50% to-transparent dark:via-white/80 inline-flex group text-white items-center border justify-center rounded-full px-4 py-1 transition ease-out"
@@ -43,7 +43,7 @@ const EndCard = () => {
               </span>
             </a>
           </div>
-          <h1 className="mt-[0] text-[150px] flex justify-center border-none opacity-85">
+          <h1 className="mt-[0] text-white text-[150px] flex justify-center border-none opacity-85">
 
             𝕊𝕜𝕚𝕡𝕖𝕣/𝕦𝕚</h1>
 
