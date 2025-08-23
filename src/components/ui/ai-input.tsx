@@ -126,7 +126,7 @@ export default function AiInput() {
                 id="ai-input-04"
                 value={value}
                 placeholder=""
-                className="w-full rounded-2xl rounded-b-none px-4 py-3 bg-neutral/500/8 border-none resize-none focus-visible:ring-0 leading-[1.2]"
+                className="w-full rounded-2xl rounded-b-none px-4 py-3 bg-neutral/500/8 border-none resize-none focus:outline focus:ring-2 focus:ring-orange-500/30 focus-visible:ring-0 leading-[1.2]"
                 ref={textareaRef}
                 onKeyDown={(e) => {
                   if (e.key === "Enter" && !e.shiftKey) {
@@ -165,7 +165,7 @@ export default function AiInput() {
                 />
                 <Paperclip 
                   className={cn(
-                    "w-6 h-6 ",
+                    "w-6 h-6 hover:gray-500/30 transition",
                     imagePreview && "text-[#ff3f17]"
                   )}
                 />
